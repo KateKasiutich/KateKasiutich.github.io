@@ -12,6 +12,7 @@ body {
     margin-left: 305px;
     margin-right: 305px;
     margin-top: 30px;
+    padding-bottom: 228px;
 }
 
 .people .person img {
@@ -34,20 +35,42 @@ body {
     text-align: center;
 }
 
-.rank, .sport, .pay {
-    display: none;
+.extra {
+    opacity: 0;
 }
 
-.person:hover {
+.rank {
+    color: #8B0000;
+    font-size: 19.2px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    padding-left: 13.2px;
+    padding-right: 13.2px;
+    padding-top: 8.4px;
+    padding-bottom: 8.4px;
+}
+
+.person:hover{
     background: #EEEEEE;
     border-radius: 10px;
     animation-delay: 1s;
 }
 
+.person:hover .extra{
+    opacity: 1;
+    font-size: 21.6px;
+    text-align: center;
+    color: #000000;
+}
+
+
 @media (min-width:1000px) and (max-width:1499px) {
     .people {
     margin-left: 55px;
     margin-right: 55px;
+    grid-column-gap: 30px;
+    padding-bottom: 228px;
     }
 }
 
@@ -57,6 +80,8 @@ body {
     margin-left: 150px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    padding-bottom: 155px;
     }
 }
 
@@ -65,14 +90,17 @@ body {
     margin: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    padding-bottom: 155px;
     }
 }
 
 @media (max-width: 499px) {
     .people {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    padding-bottom: 155px;
     }
 }

@@ -49,6 +49,7 @@ body {
     .people {
     margin-left: 55px;
     margin-right: 55px;
+    margin-buttom: 228px;
     }
 }
 
@@ -56,6 +57,7 @@ body {
     .people {
     margin-right: 150px;
     margin-left: 150px;
+    margin-buttom: 186px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     }
@@ -66,12 +68,15 @@ body {
     margin: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    margin-buttom: 186px;
     }
 }
 
 @media (max-width: 499px) {
     .people {
-    margin: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-buttom: 186px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     }

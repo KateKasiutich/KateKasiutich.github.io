@@ -76,7 +76,7 @@ body {
     .people {
     margin-left: 30px;
     margin-right: 30px;
-    margin-buttom: 186px;
+    padding-buttom: 186px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     }
